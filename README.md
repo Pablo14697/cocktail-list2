@@ -19,20 +19,20 @@ init iOS Emulator
 - `react-native run-ios`
 
 ### Dependencies
-```"dependencies": {
-    "react": "16.8.3",
-    "react-native": "0.59.9",
-    "react-native-elements": "^1.1.0",
-    "react-native-gesture-handler": "^1.3.0",
-    "react-native-linear-gradient": "^2.5.6",
-    "react-native-reanimated": "^1.2.0",
-    "react-native-vector-icons": "^6.6.0",
-    "react-navigation": "^3.11.1",
-    "react-redux": "^7.1.0",
-    "redux": "^4.0.4",
-    "redux-actions": "^2.6.5",
-    "redux-thunk": "^2.3.0"
-  }```
+
+- [x]    "react": "16.8.3",
+- [x]    "react-native": "0.59.9",
+- [x]    "react-native-elements": "^1.1.0",
+- [x]    "react-native-gesture-handler": "^1.3.0",
+- [x]    "react-native-linear-gradient": "^2.5.6",
+- [x]    "react-native-reanimated": "^1.2.0",
+- [x]    "react-native-vector-icons": "^6.6.0",
+- [x]    "react-navigation": "^3.11.1",
+- [x]    "react-redux": "^7.1.0",
+- [x]    "redux": "^4.0.4",
+- [x]    "redux-actions": "^2.6.5",
+- [x]    "redux-thunk": "^2.3.0"
+  
 
 
 ### Includes
