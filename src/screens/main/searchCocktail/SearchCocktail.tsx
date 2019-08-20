@@ -60,7 +60,7 @@ class SearchCocktail extends React.Component<Props, State> {
 
   render() {
     const { search } = this.state;
-
+    const { cocktails } = this.props;
     return (
       <LinearGradient
         useAngle={true}
@@ -75,16 +75,17 @@ class SearchCocktail extends React.Component<Props, State> {
             onChangeText={this.updateSearch}
             onCancel={this.pressForClear}
             onClear={this.pressForClear}
+            cancelButtonProps={{ color: "#808080" }}
             value={search}
             platform="ios"
-            inputContainerStyle={{ backgroundColor: "#bfbfbf" }}
+            inputContainerStyle={{ backgroundColor: "#facccc" }}
             containerStyle={{ backgroundColor: "white" }}
-            inputStyle={{ backgroundColor: "#bfbfbf", color: "black" }}
-            placeholderTextColor="#cc00cc"
+            inputStyle={{ backgroundColor: "#facccc", color: "black" }}
+            placeholderTextColor="#808080"
           />
         </View>
         <View style={Styles.placeListContainer}>
-          <PlaceList drinks={this.props.cocktails} />
+          <PlaceList drinks={cocktails} />
         </View>
       </LinearGradient>
     );

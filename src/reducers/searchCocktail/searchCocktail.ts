@@ -6,7 +6,7 @@ import {
 
 export interface searchCocktailInitialState {
   cocktails: object;
-  loginError: string;
+  error: string;
 }
 
 const searchCocktailInitialState = {
@@ -18,13 +18,11 @@ export default handleActions(
   {
     [searchCocktailRequest as any]: (state, action: any) => ({
       ...state,
-      cocktails: action.payload,
-      error: null
+      cocktails: action.payload
     }),
     [searchCocktailFailure as any]: (state, action: any) => ({
       ...state,
-      cocktails: null,
-      error: action.error
+      error: action.payload
     })
   },
   searchCocktailInitialState

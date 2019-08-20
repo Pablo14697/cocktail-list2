@@ -7,21 +7,22 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 5,
-    height: 120,
+    height: 140,
     width: "99%",
     backgroundColor: "#eee"
   },
   imageItem: {
+    marginLeft: 20,
     marginBottom: 4.5,
-    width: 90,
-    height: 90,
-    borderRadius: 90 / 2
+    width: 110,
+    height: 110,
+    borderRadius: 110 / 2
   },
   textItem: {
     color: "black",
     width: "40%",
     fontWeight: "bold",
-    fontSize: 22,
+    fontSize: 26,
     marginLeft: "15%"
   }
 });

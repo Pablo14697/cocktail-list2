@@ -7,7 +7,7 @@ export default class SearchCocktailService {
         const endpoint = SearchCocktailConfig.cocktailList(item);
         const response = await fetch(endpoint);
         if (!response.ok) {
-          throw Error(response.statusText);
+          throw Error(String(response.status));
         }
 
         const data = await response.json();
