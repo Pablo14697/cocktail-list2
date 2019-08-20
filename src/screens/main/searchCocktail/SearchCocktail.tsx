@@ -33,14 +33,16 @@ class SearchCocktail extends React.Component<Props, State> {
     if (search !== "") {
       this.setState({ loading: true }, async () => {
         const { fetchDrinks } = this.props;
-        await fetchDrinks(search);
-        this.setState({ loading: false }, () => {
-          const { error } = this.props;
+        if (String(search).length >= 3) {
+          await fetchDrinks(search);
+          this.setState({ loading: false }, () => {
+            const { error } = this.props;
 
-          if (error) {
-            Alert.alert("Error on Fetch: \n" + error);
-          }
-        });
+            if (error) {
+              Alert.alert("Error on Fetch: \n" + error);
+            }
+          });
+        }
       });
     }
   }
