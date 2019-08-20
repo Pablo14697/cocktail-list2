@@ -1,16 +1,19 @@
 import { handleActions } from "redux-actions";
 import {
   searchCocktailRequest,
-  searchCocktailFailure
+  searchCocktailFailure,
+  searchCocktailLoading
 } from "../../actions/searchCocktail";
 
-export interface searchCocktailInitialState {
+export interface SearchCocktailInitialState {
   cocktails: object;
+  loading: boolean;
   error: string;
 }
 
-const searchCocktailInitialState = {
+const SearchCocktailInitialState = {
   cocktails: null,
+  loading: false,
   error: null
 };
 
@@ -20,10 +23,14 @@ export default handleActions(
       ...state,
       cocktails: action.payload
     }),
+    [searchCocktailLoading as any]: (state: any) => ({
+      ...state,
+      loading: true
+    }),
     [searchCocktailFailure as any]: (state, action: any) => ({
       ...state,
       error: action.payload
     })
   },
-  searchCocktailInitialState
+  SearchCocktailInitialState
 );

@@ -27,23 +27,18 @@ class SearchCocktail extends React.Component<Props, State> {
     search: "",
     loading: false
   };
-
+  componentDidUpdate() {
+    const { error } = this.props;
+    if (error) {
+      Alert.alert(`Fetch ${error}`);
+    }
+  }
   search(search: any) {
     //when I press the X button, Component SearchBar set search="" for default
-    if (search !== "") {
-      this.setState({ loading: true }, async () => {
-        const { fetchDrinks } = this.props;
-        if (String(search).length >= 3) {
-          await fetchDrinks(search);
-          this.setState({ loading: false }, () => {
-            const { error } = this.props;
+    if (search !== "" && String(search).length >= 3) {
+      const { fetchDrinks } = this.props;
 
-            if (error) {
-              Alert.alert("Error on Fetch: \n" + error);
-            }
-          });
-        }
-      });
+      fetchDrinks(search);
     }
   }
 

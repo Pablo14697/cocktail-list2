@@ -1,11 +1,17 @@
 import { createAction } from "redux-actions";
-import { SEARCH_COCKTAIL_REQUEST, SEARCH_COCKTAIL_FAILURE } from "./types";
+import {
+  SEARCH_COCKTAIL_REQUEST,
+  SEARCH_COCKTAIL_LOADING,
+  SEARCH_COCKTAIL_FAILURE
+} from "./types";
 import SearchCocktailService from "../provider/searchCocktail/searchCocktailService";
 
 export const searchCocktailRequest = createAction(
   SEARCH_COCKTAIL_REQUEST,
   (cocktails: any) => cocktails.drinks
 );
+
+export const searchCocktailLoading = createAction(SEARCH_COCKTAIL_LOADING);
 
 export const searchCocktailFailure = createAction(
   SEARCH_COCKTAIL_FAILURE,
@@ -14,6 +20,7 @@ export const searchCocktailFailure = createAction(
 export const fetchDrinks = (item: any) => {
   return async (dispatch: any) => {
     try {
+      dispatch(searchCocktailLoading());
       const response = await SearchCocktailService.fetchCocktails(item);
 
       if (response) {
