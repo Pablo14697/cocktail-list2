@@ -1,17 +1,48 @@
+# React Native Cocktail List App (August 2019) - React Native 0.59.9
+
+
 <p>
   <h1 align="center">React Native TypeScript Template</h1>
-  <h2 align="center">Start a new React Native project with TypeScript, Prettier & TSLint</h1>
 </p>
 
-### Usage
+### Getting started
 
-When creating a new React Native project, use the command:<br/>
+Follow the next steps:<br/>
+- `git clone https://github.com/Pablo14697/cocktail-list2/edit/master/README.md`
+- `cd cocktail-list2`
+- `yarn` or `npm install`
+- `react-native link`
+
+That's it! 🎉 Then, proceed as usual:
+
+init with Android
+- `react-native run-android`
+
+init with iOS
+- `react-native run-ios`
 
 <pre align="center">react-native init projectname --template ts</pre>
 
 That's it! 🎉 Then, proceed as usual:
 - `cd projectname`
 - `npm start`
+
+### Dependencies
+`"dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.9",
+    "react-native-elements": "^1.1.0",
+    "react-native-gesture-handler": "^1.3.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^3.11.1",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0"
+  }`
+
 
 ### Includes
 
@@ -21,6 +52,4 @@ That's it! 🎉 Then, proceed as usual:
 - [x] Jest _(broken on react-native 0.56)_
 - [ ] Web support
 
-### Requirements
-
-- `npm i -g react-native-cli`
+Enjoy it! 🎉 
