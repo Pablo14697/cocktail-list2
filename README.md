@@ -7,7 +7,7 @@
 Follow the next steps:<br/>
 - `git clone https://github.com/Pablo14697/cocktail-list2/edit/master/README.md`
 - `cd cocktail-list2`
-- `yarn` or `npm install`
+- `yarn`
 - `react-native link`
 
 That's it! 🎉 
