@@ -1,8 +1,5 @@
-# React Native Cocktail List App (August 2019) - React Native 0.59.9
-
-
 <p>
-  <h1 align="center">React Native TypeScript Template</h1>
+  <h1 align="center">React Native TypeScript Template Cocktail List App (August 2019) - React Native 0.59.9</h1>
 </p>
 
 ### Getting started
@@ -13,19 +10,13 @@ Follow the next steps:<br/>
 - `yarn` or `npm install`
 - `react-native link`
 
-That's it! 🎉 Then, proceed as usual:
+That's it! 🎉 
 
-init with Android
+init Android Emulator
 - `react-native run-android`
 
-init with iOS
+init iOS Emulator
 - `react-native run-ios`
-
-<pre align="center">react-native init projectname --template ts</pre>
-
-That's it! 🎉 Then, proceed as usual:
-- `cd projectname`
-- `npm start`
 
 ### Dependencies
 `"dependencies": {
