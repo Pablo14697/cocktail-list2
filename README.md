@@ -19,7 +19,7 @@ init iOS Emulator
 - `react-native run-ios`
 
 ### Dependencies
-`"dependencies": {
+```"dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.9",
     "react-native-elements": "^1.1.0",
@@ -32,7 +32,7 @@ init iOS Emulator
     "redux": "^4.0.4",
     "redux-actions": "^2.6.5",
     "redux-thunk": "^2.3.0"
-  }`
+  }```
 
 
 ### Includes
