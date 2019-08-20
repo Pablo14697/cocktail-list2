@@ -18,14 +18,12 @@ type ConnectProps = StoreProps & {
 
 interface State {
   search: string;
-  loading: boolean;
 }
 type Props = ConnectProps;
 
 class SearchCocktail extends React.Component<Props, State> {
   state = {
-    search: "",
-    loading: false
+    search: ""
   };
   componentDidUpdate() {
     const { error } = this.props;
