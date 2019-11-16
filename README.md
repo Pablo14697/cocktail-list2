@@ -2,6 +2,9 @@
   <h1 align="center">React Native TypeScript Template Cocktail List App (August 2019) - React Native 0.59.9</h1>
 </p>
 
+![image](https://i.ibb.co/QXyj4Pj/Captura-de-Pantalla-2019-11-16-a-la-s-20-36-24.png)
+![image](https://i.ibb.co/bWCTsNL/Captura-de-Pantalla-2019-11-16-a-la-s-20-37-15.png)
+
 ### Getting started
 
 Follow the next steps:<br/>
